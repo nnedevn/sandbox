@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Making progress...</title>
+    <style>
+body {
+  width: 600px;
+  margin: auto;
+  max-width: 100%;
+}
+header.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header.progress-bar .fill {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  transition: width .1s ease-in-out;
+  background: magenta;
+}
+section { height: 400px; }
+#intro { background-color: #CFF }
+#first { background-color: #FCC }
+#second { background-color: #CFC }
+#third { background-color: #FFC }
+#conclusion { background-color: #CCC }
+    </style>
+  </head>
+  <body>
+    <header class="progress-bar">
+      <div class="fill"></div>
+    </header>
+
+    <section id="intro"></section>
+    <section id="first"></section>
+    <section id="second"></section>
+    <section id="third"></section>
+    <section id="conclusion"></section>
+
+<script src="app.js"></script>
+  </body>
+</html>
